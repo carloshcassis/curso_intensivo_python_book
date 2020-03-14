@@ -1,10 +1,14 @@
-idade = int(input("digite sua idade ou 'quit' para sair: ")
+mensagem = "digite sua idade ou 'quit' para sair: "
 
-while idade != 'quit' :
+while True:
+    idade = input(mensagem)
+    if idade == 'quit':
+        break
+    idade = int(idade)    
     if idade < 3 :
             print('ingresso gratuito  =)')
     
-    elif idade >= 3 and <= 12 :
+    elif idade >= 3 and idade <= 12 :
             print('pague 10 dolares')
 
     else:
